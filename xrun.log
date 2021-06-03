@@ -1,0 +1,20 @@
+xrun(64): 19.03-s009: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	19.03-s009: Started on Jun 03, 2021 at 12:55:57 KST
+xrun
+	-f alu_rtl.f
+		./alu_tb.sv
+		./handler.c
+		./instruction.c
+		./proc.c
+		./thiss.c
+		../rtl/alu_decoder.v
+		../rtl/reg_file.v
+		../rtl/alutop.v
+		../rtl/alu_ctrl.v
+		../rtl/alu_ver2.v
+		../rtl/alu_reg.v
+Loading snapshot worklib.alu_tb:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /tools/EDA/cadence/xcelium/tools/xcelium/files/xmsimrc
+xcelium> run
+TOOL:	xrun(64)	19.03-s009: Exiting on Jun 03, 2021 at 12:56:38 KST  (total: 00:00:41)

@@ -1,0 +1,25 @@
+xmsc_run: *N,TBDEP: Test will be regenerated due to changes in
+          command line ld_test options
+$CDSROOT = /tools/EDA/cadence/xcelium
+$TESTDIR = /home1/wjkim/dsal/CPU_CORE_DES/alu_final/THISS/src
+
+TOOL:	xmsc(64)	19.03-s009
+xmsc cc parameters: 
+	$CDSROOT/tools/cdsgcc/gcc/6.3/bin/gcc
+	-I$CDSROOT/tools/include
+	-I$CDSROOT/tools/inca/include 
+	-DXMSC
+	-DNCSC
+	-fPIC
+	-D_GLIBCXX_USE_CXX11_ABI=0 -c
+	-x c  -Wall
+
+make: `xcelium.d/run.lnx8664.19.03.d/xmsc_run/xmsc_obj/handler_0.o'는 이미 갱신되었습니다.
+
+make: `xcelium.d/run.lnx8664.19.03.d/xmsc_run/xmsc_obj/instruction_0.o'는 이미 갱신되었습니다.
+
+make: `xcelium.d/run.lnx8664.19.03.d/xmsc_run/xmsc_obj/proc_0.o'는 이미 갱신되었습니다.
+
+make: `xcelium.d/run.lnx8664.19.03.d/xmsc_run/xmsc_obj/thiss_0.o'는 이미 갱신되었습니다.
+
+building library run.so

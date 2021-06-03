@@ -1,0 +1,125 @@
+Operating system: Linux
+                  0.0.0 Linux 2.6.32-754.29.2.el6.x86_64 #1 SMP Tue May 12 17:39:04 UTC 2020 x86_64
+CPU: amd64
+     family 6 model 85 stepping 7
+     1 CPU
+
+GPU: UNKNOWN
+
+Crash reason:  DUMP_REQUESTED
+Crash address: 0x7fe50e1e22e0
+Process uptime: not available
+
+Thread 0 (crashed)
+ 0  libcbreakpad.so + 0x2f2e0
+    rax = 0x00007fe50e1b55d4   rdx = 0x0000000000000000
+    rcx = 0xffffffffffffffff   rbx = 0x00007fe5076a3ee0
+    rsi = 0x0000000000000001   rdi = 0x00007fe5076a3898
+    rbp = 0x00007fe5076a3e50   rsp = 0x00007fe5076a3800
+     r8 = 0x0000000000000000    r9 = 0x0000000000000000
+    r10 = 0x0000000100000273   r11 = 0x0000000002be202c
+    r12 = 0x00007fe5076a41c8   r13 = 0x00000000000027d3
+    r14 = 0x00007fe5076a3e60   r15 = 0x00007fe506d32cde
+    rip = 0x00007fe50e1e22e0
+    Found by: given as instruction pointer in context
+ 1  libcbreakpad.so + 0x2d64e
+    rbp = 0x00007fe5076a3f80   rsp = 0x00007fe5076a3e60
+    rip = 0x00007fe50e1e064e
+    Found by: previous frame's frame pointer
+ 2  xmsim!_fini + 0x3f7f91
+    rbp = 0x00007fe5076a3f80   rsp = 0x00007fe5076a3ed0
+    rip = 0x0000000002094f91
+    Found by: stack scanning
+ 3  xmsim!ncdbg_fatal + 0x21
+    rbp = 0x00007fe5076a3f80   rsp = 0x00007fe5076a3f70
+    rip = 0x00000000014e6cc1
+    Found by: stack scanning
+ 4  xmsim!vserror + 0x1282
+    rbx = 0x00007fe5076a44b0   rbp = 0x0000000000000001
+    rsp = 0x00007fe5076a3f90   rip = 0x00000000014eeb42
+    Found by: call frame info
+ 5  xmsim!serror + 0x95
+    rbx = 0x00000000000027d3   rbp = 0x00007fe5076a4370
+    rsp = 0x00007fe5076a41c0   r12 = 0x00007fe5076a4380
+    r13 = 0xfffffffffffff970   r14 = 0x00007fe5076a44b0
+    rip = 0x00000000014eef25
+    Found by: call frame info
+ 6  xmsim!sv_seghandler + 0x99e
+    rbx = 0x0000000000000000   rbp = 0x00007fe5076a4370
+    rsp = 0x00007fe5076a42a0   r12 = 0x00007fe5076a4380
+    r13 = 0xfffffffffffff970   r14 = 0x00007fe5076a44b0
+    rip = 0x000000000098bd9e
+    Found by: call frame info
+ 7  libpthread-2.12.so + 0xf7e0
+    rbx = 0x0000000005739818   rbp = 0x00007fe507619b30
+    rsp = 0x00007fe5076a4380   r12 = 0x0000000000000000
+    r13 = 0x0000000000000000   r14 = 0x000000000572cbd0
+    r15 = 0x0000000000000000   rip = 0x000000335f40f7e0
+    Found by: call frame info
+ 8  librun.so + 0x2cbc
+    rsp = 0x00007fe5076a43c8   rip = 0x00007fe506d32cbc
+    Found by: stack scanning
+ 9  librun.so + 0x2cde
+    rsp = 0x00007fe5076a4430   rip = 0x00007fe506d32cde
+    Found by: stack scanning
+
+Loaded modules:
+0x00400000 - 0x023f1fff  xmsim  ???  (main)
+0x025f1000 - 0x027e4fff  xmsim  ???
+0x335e400000 - 0x335e41ffff  ld-2.12.so  ???
+0x335e620000 - 0x335e621fff  ld-2.12.so  ???
+0x335ec00000 - 0x335ed8afff  libc-2.12.so  ???
+0x335ed8b000 - 0x335ef8ffff  libc-2.12.so  ???
+0x335f000000 - 0x335f001fff  libdl-2.12.so  ???
+0x335f002000 - 0x335f203fff  libdl-2.12.so  ???
+0x335f400000 - 0x335f416fff  libpthread-2.12.so  ???  (WARNING: No symbols, libpthread-2.12.so, CD75A44ED33F9BB66C95D9381FA74B360)
+0x335f417000 - 0x335f618fff  libpthread-2.12.so  ???
+0x335f800000 - 0x335f882fff  libm-2.12.so  ???
+0x335f883000 - 0x335fa83fff  libm-2.12.so  ???
+0x335fc00000 - 0x335fc06fff  librt-2.12.so  ???
+0x335fc07000 - 0x335fe07fff  librt-2.12.so  ???
+0x3360000000 - 0x3360015fff  libresolv-2.12.so  ???
+0x3360016000 - 0x3360217fff  libresolv-2.12.so  ???
+0x3360800000 - 0x3360914fff  libglib-2.0.so.0.2800.8  ???
+0x3360915000 - 0x3360b15fff  libglib-2.0.so.0.2800.8  ???
+0x3360c00000 - 0x3360c03fff  libgthread-2.0.so.0.2800.8  ???
+0x3360c04000 - 0x3360e03fff  libgthread-2.0.so.0.2800.8  ???
+0x3362000000 - 0x3362049fff  libgobject-2.0.so.0.2800.8  ???
+0x336204a000 - 0x336224afff  libgobject-2.0.so.0.2800.8  ???
+0x3363000000 - 0x336300bfff  libudev.so.0.5.1  ???
+0x336300c000 - 0x336320dfff  libudev.so.0.5.1  ???
+0x3364000000 - 0x336403ffff  libdbus-1.so.3.4.0  ???
+0x3364040000 - 0x3364240fff  libdbus-1.so.3.4.0  ???
+0x336f400000 - 0x336f40ffff  libhal.so.1.0.0  ???
+0x336f410000 - 0x336f60ffff  libhal.so.1.0.0  ???
+0x336f800000 - 0x336f821fff  libdbus-glib-1.so.2.1.0  ???
+0x336f822000 - 0x336fa22fff  libdbus-glib-1.so.2.1.0  ???
+0x3371600000 - 0x3371614fff  libelf-0.164.so  ???
+0x3371615000 - 0x3371815fff  libelf-0.164.so  ???
+0x7fe506d30000 - 0x7fe506d37fff  librun.so  ???  (WARNING: No symbols, librun.so, E516C55D86915EE578DEC52A3406E50A0)
+0x7fe506d38000 - 0x7fe506f37fff  librun.so  ???
+0x7fe506ffa000 - 0x7fe50701afff  libml_uvm.so  ???
+0x7fe50701b000 - 0x7fe50721bfff  libml_uvm.so  ???
+0x7fe5076a8000 - 0x7fe5077f9fff  libStrapNC.so  ???
+0x7fe5077fa000 - 0x7fe507a2ffff  libStrapNC.so  ???
+0x7fe507a3a000 - 0x7fe507adafff  libdcapi.so  ???
+0x7fe507adb000 - 0x7fe507ce6fff  libdcapi.so  ???
+0x7fe507ce8000 - 0x7fe50db7cfff  locale-archive  ???
+0x7fe50db7d000 - 0x7fe50db81fff  libnss_dns-2.12.so  ???
+0x7fe50db82000 - 0x7fe50dd82fff  libnss_dns-2.12.so  ???
+0x7fe50dd83000 - 0x7fe50dd8ffff  libnss_files-2.12.so  ???
+0x7fe50dd90000 - 0x7fe50df90fff  libnss_files-2.12.so  ???
+0x7fe50dfcf000 - 0x7fe50dfd5fff  gconv-modules.cache  ???
+0x7fe50e1b3000 - 0x7fe50e20dfff  libcbreakpad.so  ???  (WARNING: No symbols, libcbreakpad.so, 24CD58BD78E8ECAC4322A420304CAF0A0)
+0x7fe50e20e000 - 0x7fe50e410fff  libcbreakpad.so  ???
+0x7fe50e41d000 - 0x7fe50e432fff  libgcc_s.so.1  ???
+0x7fe50e433000 - 0x7fe50e633fff  libgcc_s.so.1  ???
+0x7fe50e634000 - 0x7fe50e7a5fff  libstdc++.so.6.0.22  ???
+0x7fe50e7a6000 - 0x7fe50e9b0fff  libstdc++.so.6.0.22  ???
+0x7ffc283e0000 - 0x7ffc283e0fff  linux-gate.so  ???
+
+******BACKTRACE*****
+vserror [0x14eeb42]
+serror [0x14eef25]
+sv_seghandler [0x98bd9e]
+******BACKTRACE END*****

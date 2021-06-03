@@ -1,0 +1,118 @@
+Operating system: Linux
+                  0.0.0 Linux 2.6.32-754.29.2.el6.x86_64 #1 SMP Tue May 12 17:39:04 UTC 2020 x86_64
+CPU: amd64
+     family 6 model 85 stepping 7
+     1 CPU
+
+GPU: UNKNOWN
+
+Crash reason:  DUMP_REQUESTED
+Crash address: 0x7f96189692e0
+Process uptime: not available
+
+Thread 0 (crashed)
+ 0  libcbreakpad.so + 0x2f2e0
+    rax = 0x00007f961893c5d4   rdx = 0x0000000000000000
+    rcx = 0xffffffffffffffff   rbx = 0x00007fff789bfef0
+    rsi = 0x0000000000000001   rdi = 0x00007fff789bf8a8
+    rbp = 0x00007fff789bfe60   rsp = 0x00007fff789bf810
+     r8 = 0x0000000000000000    r9 = 0x0000000000000000
+    r10 = 0x0000000000000000   r11 = 0x0000000002be202c
+    r12 = 0x00007fff789c01d8   r13 = 0x000000000000000b
+    r14 = 0x00007fff789bfe70   r15 = 0x0000000000000001
+    rip = 0x00007f96189692e0
+    Found by: given as instruction pointer in context
+ 1  libcbreakpad.so + 0x2d64e
+    rbp = 0x00007fff789bff90   rsp = 0x00007fff789bfe70
+    rip = 0x00007f961896764e
+    Found by: previous frame's frame pointer
+ 2  ld-2.12.so + 0x9696
+    rbp = 0x00007fff789bff90   rsp = 0x00007fff789bff80
+    rip = 0x000000335e409696
+    Found by: stack scanning
+ 3  xmsim!vserror + 0x98
+    rsp = 0x00007fff789bffa0   rip = 0x00000000014ed958
+    Found by: stack scanning
+ 4  xmsim!serror + 0x95
+    rbx = 0x0000000000000000   rbp = 0x0000000003b50550
+    rsp = 0x00007fff789c01d0   r12 = 0x0000000003b50430
+    r13 = 0x0000000003b50550   r14 = 0x00007fff789c5fd0
+    rip = 0x00000000014eef25
+    Found by: call frame info
+ 5  xmsim!ssig_interr + 0x5a
+    rbx = 0x000000000000000b   rbp = 0x0000000003b50550
+    rsp = 0x00007fff789c02b0   r12 = 0x0000000003b50430
+    r13 = 0x0000000003b50550   r14 = 0x00007fff789c5fd0
+    rip = 0x00000000014d574a
+    Found by: call frame info
+ 6  libpthread-2.12.so + 0xf7e0
+    rbx = 0x00000000fffffff5   rbp = 0x0000000003b50550
+    rsp = 0x00007fff789c0340   r12 = 0x0000000003b50430
+    r13 = 0x0000000003b50550   r14 = 0x00007fff789c5fd0
+    rip = 0x000000335f40f7e0
+    Found by: call frame info
+ 7  xmsim!nc_prepare_to_exit + 0x31
+    rsp = 0x00007fff789c03f0   rip = 0x00000000004ac556
+    Found by: stack scanning
+
+Loaded modules:
+0x00400000 - 0x023f1fff  xmsim  ???  (main)
+0x025f1000 - 0x027e4fff  xmsim  ???
+0x335e400000 - 0x335e41ffff  ld-2.12.so  ???  (WARNING: No symbols, ld-2.12.so, 774BAF972F21CF74F72B6C013E6AA2D70)
+0x335e620000 - 0x335e621fff  ld-2.12.so  ???
+0x335ec00000 - 0x335ed8afff  libc-2.12.so  ???
+0x335ed8b000 - 0x335ef8ffff  libc-2.12.so  ???
+0x335f000000 - 0x335f001fff  libdl-2.12.so  ???
+0x335f002000 - 0x335f203fff  libdl-2.12.so  ???
+0x335f400000 - 0x335f416fff  libpthread-2.12.so  ???  (WARNING: No symbols, libpthread-2.12.so, CD75A44ED33F9BB66C95D9381FA74B360)
+0x335f417000 - 0x335f618fff  libpthread-2.12.so  ???
+0x335f800000 - 0x335f882fff  libm-2.12.so  ???
+0x335f883000 - 0x335fa83fff  libm-2.12.so  ???
+0x3360000000 - 0x3360015fff  libresolv-2.12.so  ???
+0x3360016000 - 0x3360217fff  libresolv-2.12.so  ???
+0x7f9618304000 - 0x7f9618308fff  libnss_dns-2.12.so  ???
+0x7f9618309000 - 0x7f9618509fff  libnss_dns-2.12.so  ???
+0x7f961850a000 - 0x7f9618516fff  libnss_files-2.12.so  ???
+0x7f9618517000 - 0x7f9618717fff  libnss_files-2.12.so  ???
+0x7f961893a000 - 0x7f9618994fff  libcbreakpad.so  ???  (WARNING: No symbols, libcbreakpad.so, 24CD58BD78E8ECAC4322A420304CAF0A0)
+0x7f9618995000 - 0x7f9618b97fff  libcbreakpad.so  ???
+0x7f9618ba4000 - 0x7f9618bb9fff  libgcc_s.so.1  ???
+0x7f9618bba000 - 0x7f9618dbafff  libgcc_s.so.1  ???
+0x7f9618dbb000 - 0x7f9618f2cfff  libstdc++.so.6.0.22  ???
+0x7f9618f2d000 - 0x7f9619137fff  libstdc++.so.6.0.22  ???
+0x7fff789e9000 - 0x7fff789e9fff  linux-gate.so  ???
+
+******BACKTRACE*****
+vserror [0x14ed958]
+serror [0x14eef25]
+ssig_interr [0x14d574a]
+nc_prepare_to_exit [0x4ac556]
+sexit [0x14d4b49]
+ssig_exit [0x14d56d3]
+Ox6e67dcea29706914 [0x196a0d6]
+Ox6e67d6ba18ed30d7 [0x1977b67]
+Ox6e67d6bc07971a36 [0x197821c]
+Ox6e67def00a21ce0b [0x1980d42]
+Ox6e67d8a73f97d496 [0x19817c5]
+Ox6e67d88164b48b92 [0x1981a94]
+Ox6e67d75b58bdfc8e [0x199ed79]
+Ox6e67d75b58bdfc8e [0x19a034d]
+Ox6e67d74f69a577b5 [0x199974c]
+t9a9j9fkwWb [0x19998a9]
+tTka0g2aIdgJvFuwKCu [0x1996c0c]
+x7GPMrka8DN5NkyJ_Wv [0x1997a94]
+lmiFeatureExists [0x19a91e7]
+lmFeatureExists [0x19a9685]
+cdslicFeatureExists [0x1a230e2]
+ulmFeatureExists [0x1131390]
+xc_add_single_core_legacy_to_promo_order [0x4985f9]
+xc_setup_xcelium_promotion_order [0x499091]
+xc_get_xcelium_core_license_worker [0x4970a8]
+xc_get_xcelium_core_license_or_die [0x497214]
+xc_get_xcelium_licenses_or_die [0x497df1]
+get_license [0x499f69]
+xncmain [0x4a4d08]
+ncmain [0x49d820]
+main [0x1c9cefc]
+_start [0x43ca6d]
+******BACKTRACE END*****

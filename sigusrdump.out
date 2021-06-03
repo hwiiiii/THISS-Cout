@@ -1,0 +1,5 @@
+*** Current stack trace:
+--> 0x7fe506d32cde inst_fetch           + 22       ./xcelium.d/run.lnx8664.19.03.d/librun.so
+--> 0x7fe506d32cde inst_fetch           + 22       ./xcelium.d/run.lnx8664.19.03.d/librun.so
+--> 0x7fe506d327c3 main                 + 37e      ./xcelium.d/run.lnx8664.19.03.d/librun.so
+--> 0x56de4f6 main                 + ffff801afe9ac0b1 ./xcelium.d/run.lnx8664.19.03.d/librun.so

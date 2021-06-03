@@ -1,0 +1,119 @@
+0 
+33
++itf+/tools/EDA/synopsys/vcs/O-2018.09-SP2-11/linux64/lib/vcsdp.tab
++memcbk
++notimingcheck
++v2k
++vcsd
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/tools/EDA/synopsys/vcs/O-2018.09-SP2-11/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /tools/EDA/synopsys/vcs/O-2018.09-SP2-11/linux64/lib/libvirsim.so /tools/EDA/synopsys/vcs/O-2018.09-SP2-11/linux64/lib/liberrorinf.so /tools/EDA/synopsys/vcs/O-2018.09-SP2-11/linux64/lib/libsnpsmalloc.so /tools/EDA/synopsys/vcs/O-2018.09-SP2-11/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/tools/EDA/synopsys/vcs/O-2018.09-SP2-11/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/tools/EDA/synopsys/vcs/O-2018.09-SP2-11/include
+-Xvcs_run_simv=1
+-debug_access+all+bc
+-debug_region+cell
+-f alu_vcs.f
+-full64
+-full64
+-gen_obj
+-picarchive
+-sverilog
+/tools/EDA/synopsys/vcs/O-2018.09-SP2-11/linux64/bin/vcs1
+alu_vcs.f
+67
+XCELIUM_HOME=/tools/EDA/cadence/xcelium
+VMR_MODE_FLAG=64
+VERDI_HOME=/tools/EDA/synopsys/verdi/L-2016.06-SP2-16
+VCS_SWIFT_NOTES=1
+VCS_PRINT_INITREG_INITIALIZATION=1
+VCS_MODE_FLAG=64
+VCS_HOME=/tools/EDA/synopsys/vcs/O-2018.09-SP2-11
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=linux
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/tools/EDA/synopsys/vcs/O-2018.09-SP2-11/linux64
+SYNOPSYS_VERDI=/tools/EDA/synopsys/verdi/L-2016.06-SP2-16/bin
+SYNOPSYS_VCS=/tools/EDA/synopsys/vcs/O-2018.09-SP2-11/bin
+SYNOPSYS_SYSTYPE=LINUX.64
+SYNOPSYS_SYN_HOME=/tools/EDA/synopsys/syn/P-2019.03-SP5-4
+SYNOPSYS_SYN_EXEC=/tools/EDA/synopsys/syn/P-2019.03-SP5-4/bin
+SYNOPSYS_SYN=/tools/EDA/synopsys/syn/P-2019.03-SP5-4/bin
+SYNOPSYS_STARRCXT=/tools/EDA/synopsys/star-rcxt/H-2013.06/bin
+SYNOPSYS_SIMIF=/tools/EDA/synopsys/simif/B-2008.09-SP1/bin
+SYNOPSYS_SILSMART=/tools/EDA/synopsys/siliconsmart/K-2015.06-SP2/bin
+SYNOPSYS_PTS=/tools/EDA/synopsys/pts/I-2013.12-SP3/bin
+SYNOPSYS_NANOSIM=/tools/EDA/synopsys/ns/Z-2007.03-SP2/bin
+SYNOPSYS_MVTOOLS=/tools/EDA/synopsys/mvtools/I-2014.03-SP2/bin
+SYNOPSYS_ICVALIDATOR=/tools/EDA/synopsys/icv/L-2016.06-SP2-11/bin/LINUX.64
+SYNOPSYS_ICC=/tools/EDA/synopsys/icc/I-2013.12-SP2/amd64/syn/bin
+SYNOPSYS_ICC2=/tools/EDA/synopsys/icc2/O-2018.06-SP4/bin
+SYNOPSYS_HSPICE=/tools/EDA/synopsys/hspice/I-2013.12-SP1/hspice/bin
+SYNOPSYS_FPGA=/tools/EDA/synopsys/fpga/I-2013.09-SP1/bin
+SYNOPSYS_FM=/tools/EDA/synopsys/formality/I-2013.12-SP2/bin
+SYNOPSYS_FINESIM=/tools/EDA/synopsys/finesim/L-2016.06/bin
+SYNOPSYS_CX=/tools/EDA/synopsys/cx/L-2016.06/bin
+SYNOPSYS_ASTRO=/tools/EDA/synopsys/astro/Z-2007.03-SP12/bin/IA.32
+SYNOPSYS=/tools/EDA/synopsys
+SSH_TTY=/dev/pts/5
+SSH_CONNECTION=203.255.177.81 49357 203.255.176.150 22
+SSH_CLIENT=203.255.177.81 49357 22
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+OVA_UUM=0
+MODULESHOME=/usr/share/Modules
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+LOADEDMODULES=
+LMC_HOME=/tools/EDA/synopsys/dw/dwmm
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=ko_KR.UTF-8
+KDEDIRS=/usr
+INNOVUS_HOME=/tools/EDA/cadence/innovus
+ICV_HOME_DIR=/tools/EDA/synopsys/icv/L-2016.06-SP2-11/
+HISTCONTROL=ignoredups
+G_BROKEN_FILENAMES=1
+DESIGNWARE_SIM=/tools/EDA/synopsys/syn/P-2019.03-SP5-4/dw/sim_ver
+DESIGNWARE_HOME=/tools/EDA/synopsys/syn/P-2019.03-SP5-4/dw
+CVS_RSH=ssh
+CDS_Netlisting_Mode=Analog
+CDS_INST_DIR=/tools/EDA/cadence/xcelium
+CADENCE_XC_PATH=/tools/EDA/cadence/xcelium/tools/cdsgcc/gcc/bin/64bit:/tools/EDA/cadence/xcelium/tools/simvision/bin/64bit:/tools/EDA/cadence/xcelium/tools/bin/64bit:/tools/EDA/cadence/xcelium/tools/bin
+CADENCE_XC_LIB=/tools/EDA/cadence/xcelium/tools/cdsgcc/gcc/4.8/install/lib64:/tools/EDA/cadence/xcelium/tools/inca/lib/64bit:/tools/EDA/cadence/xcelium/tools/lib/64bit:/tools/EDA/cadence/xcelium/tools/lib
+CADENCE_INV_PATH=/tools/EDA/cadence/innovus/bin:/tools/EDA/cadence/innovus/tools.lnx86/bin
+CADENCE=/tools/EDA/cadence
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
+ARCHPRO_ROOT=/tools/EDA/synopsys/mvtools/I-2014.03-SP2
+0
+9
+1621233551 ../rtl/alu_reg.v
+1621233551 ../rtl/alu_ver2.v
+1621233551 ../rtl/alu_ctrl.v
+1621233551 ../rtl/alutop.v
+1621495906 ../rtl/reg_file.v
+1621233551 ../rtl/alu_decoder.v
+1622508980 ./alu_tb.sv
+1622508917 alu_vcs.f
+1581653251 /tools/EDA/synopsys/vcs/O-2018.09-SP2-11/linux64/lib/vcsdp.tab
+4
+1581654817 /tools/EDA/synopsys/vcs/O-2018.09-SP2-11/linux64/lib/libvirsim.so
+1581653862 /tools/EDA/synopsys/vcs/O-2018.09-SP2-11/linux64/lib/liberrorinf.so
+1581653788 /tools/EDA/synopsys/vcs/O-2018.09-SP2-11/linux64/lib/libsnpsmalloc.so
+1581653853 /tools/EDA/synopsys/vcs/O-2018.09-SP2-11/linux64/lib/libvfs.so
